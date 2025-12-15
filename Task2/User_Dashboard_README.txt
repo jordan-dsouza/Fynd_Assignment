@@ -4,7 +4,7 @@ emoji: 🍽️
 colorFrom: green
 colorTo: blue
 sdk: streamlit
-sdk_version: "1.24.0"
+sdk_version: "1.52.1"
 app_file: user_app.py
 pinned: true
 ---
@@ -21,3 +21,4 @@ This is the **public-facing dashboard** for submitting Yelp reviews.
 
 ## Deployment URL
 https://huggingface.co/spaces/JDsouza1/fynd-user-dashboard
+
