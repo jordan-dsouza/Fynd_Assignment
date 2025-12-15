@@ -31,10 +31,12 @@ Write a short, polite response directly to the customer.
 
         save_entry({
             "rating": rating,
+            "timestamp": datetime.now().isoformat(),
             "review": review,
             "ai_response": ai_response
         })
 
         st.success("Review submitted!")
         st.subheader("AI Response")
+
         st.write(ai_response)
