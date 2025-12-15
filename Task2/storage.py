@@ -5,7 +5,7 @@ DATA_FILE = "submissions.json"
 
 def load_data():
     try:
-        with open(FILE, "r") as f:
+        with open(DATA_FILE, "r") as f:
             return json.load(f)
     except FileNotFoundError:
         return []
@@ -31,6 +31,7 @@ def save_entry(rating, review, ai_response):
     })
     with open(DATA_FILE, "w") as f:
         json.dump(data, f, indent=2)
+
 
 
 
