@@ -1,21 +1,16 @@
-1. Tech stack: Streamlit, Transformers, pandas, JSON storage
+# Fynd AI Intern – Take Home Assessment
+This repository contains the implementation of Task 1 (Rating Prediction) and Task 2 (User & Admin Dashboards) for the Fynd AI Intern assignment.
 
-2. User dashboard:
+## Dashboards
 
-- Submit review + rating -> AI response
+- **User Dashboard:** `user_app.py`  
+- **Admin Dashboard:** `admin_app.py`  
+## Usage
 
-- Tested positive/negative reviews
+Run the dashboards locally:
 
-3. Admin dashboard:
+User Dashboard:
+streamlit run user_app.py
 
-- Table view with: Rating, Review, AI summary, Recommended action, Timestamp
-
-- Rules enforced: Positive -> thank, Negative -> apologize + corrective step
-
-- Live updates tested
-
-4. Prompt engineering notes:
-
-- Avoided repetition/echoing
-
-- Decoding constraints for short output
+Admin Dashboard:
+streamlit run admin_app.py
