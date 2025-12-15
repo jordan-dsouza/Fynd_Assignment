@@ -12,6 +12,7 @@ def load_data():
 
 # Save entries in "submissions":
 # Timestamps saved as Timezone Aware UTC DateTime to avoid depreciation issues:
+"""
 def save_entry(entry: dict):
     data = load_data()
     entry["timestamp"] = datetime.now(timezone.utc).isoformat()
@@ -20,3 +21,15 @@ def save_entry(entry: dict):
 
     with open(FILE, "w") as f:
         json.dump(data, f, indent=2)
+"""
+def save_entry(rating, review, ai_response):
+    data = load_data()
+    data.append({
+        "timestamp": datetime.now().isoformat(),
+        "rating": rating,
+        "review": review,
+        "ai_response": ai_response
+    })
+    with open(DATA_FILE, "w") as f:
+        json.dump(data, f, indent=2)
+
