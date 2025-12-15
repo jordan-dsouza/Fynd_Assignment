@@ -1,7 +1,10 @@
 import json
 from datetime import datetime, timezone
+from pathlib import Path
 
-DATA_FILE = "submissions.json"
+# Absolute path relative to this file
+BASE_DIR = Path(__file__).parent
+DATA_FILE = BASE_DIR / "submissions.json"
 
 def load_data():
     try:
@@ -11,17 +14,6 @@ def load_data():
         return []
 
 # Save entries in "submissions":
-# Timestamps saved as Timezone Aware UTC DateTime to avoid depreciation issues:
-"""
-def save_entry(entry: dict):
-    data = load_data()
-    entry["timestamp"] = datetime.now(timezone.utc).isoformat()
-
-    data.append(entry)
-
-    with open(FILE, "w") as f:
-        json.dump(data, f, indent=2)
-"""
 def save_entry(rating, review, ai_response):
     data = load_data()
     data.append({
@@ -31,7 +23,3 @@ def save_entry(rating, review, ai_response):
     })
     with open(DATA_FILE, "w") as f:
         json.dump(data, f, indent=2)
-
-
-
-
