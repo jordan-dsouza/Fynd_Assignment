@@ -29,14 +29,11 @@ Write a short, polite response directly to the customer.
 
         ai_response = call_llm(prompt)
 
-        save_entry({
-            "rating": rating,
-            "review": review,
-            "ai_response": ai_response
-        })
+        save_entry(rating, review, ai_response)
 
         st.success("Review submitted!")
         st.subheader("AI Response")
 
         st.write(ai_response)
+
 
