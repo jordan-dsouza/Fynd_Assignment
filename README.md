@@ -3,8 +3,7 @@ Task 1 and Task 2
 Task 2 Deployment URL:
 
 - User Dashboard:
-[https://huggingface.co/spaces/JDsouza1/fynd_user_dashboard](https://huggingface.co/spaces/JDsouza1/fynd-user-dashboard)
+[https://jdsouza1-fynd-new.hf.space/User_Dashboard](https://jdsouza1-fynd-new.hf.space/User_Dashboard)
 
 - Admin Dashboard:
-[https://huggingface.co/spaces/JDsouza1/fynd_admin_dashboard](https://huggingface.co/spaces/JDsouza1/fynd_admin_dashboard)  
-
+[https://jdsouza1-fynd-new.hf.space/Admin_Dashboard](https://jdsouza1-fynd-new.hf.space/Admin_Dashboard)
