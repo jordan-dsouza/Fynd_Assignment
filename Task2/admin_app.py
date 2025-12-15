@@ -2,9 +2,13 @@ import streamlit as st
 import pandas as pd
 from llm import call_llm
 from storage import load_data
+import time
 
 st.set_page_config(page_title="Admin Dashboard", layout="wide")
 st.title("Admin Dashboard")
+
+time.sleep(5)
+st.rerun()
 
 # Load submissions
 data = load_data()
@@ -51,3 +55,6 @@ Rules:
 
     # Display newest first
     st.dataframe(df[::-1], width=1200, height=600)
+if st.button("Refresh"):
+    st.rerun()
+
