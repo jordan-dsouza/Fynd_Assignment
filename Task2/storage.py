@@ -1,7 +1,7 @@
 import json
 from datetime import datetime, timezone
 
-FILE = "submissions.json"
+DATA_FILE = "submissions.json"
 
 def load_data():
     try:
@@ -31,5 +31,6 @@ def save_entry(rating, review, ai_response):
     })
     with open(DATA_FILE, "w") as f:
         json.dump(data, f, indent=2)
+
 
 
