@@ -17,5 +17,7 @@ Internal dashboard to monitor customer reviews.
 - View all submitted reviews
 - AI-generated summary for each review
 - AI-recommended actions:
-  - Positive → thank the customer
-  - Negative → apologize and suggest corrective action
+  - Positive -> thank the customer
+  - Negative -> apologize and suggest corrective action
+## Deployment URL:
+https://huggingface.co/spaces/JDsouza1/fynd_admin_dashboard
