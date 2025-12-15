@@ -47,8 +47,7 @@ Rules:
         "Rating": [entry['rating'] for entry in data],
         "Review": [entry['review'] for entry in data],
         "AI Summary": summaries,
-        "Recommended Action": actions,
-        "Timestamp": [entry.get('timestamp', '') for entry in data]
+        "Recommended Action": actions
     })
 
     # Display newest first
